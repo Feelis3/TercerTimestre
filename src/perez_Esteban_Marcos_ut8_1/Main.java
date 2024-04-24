@@ -86,6 +86,7 @@ public class Main {
                 System.out.println("No es un numero positivo.");
             }
         }while (error);
+        sc.close();
         return 0;
     }
 
@@ -106,7 +107,7 @@ public class Main {
                 scanner.nextLine();
             }
         }while (error);
-
+        scanner.close();
 
     }
 
@@ -158,6 +159,7 @@ public class Main {
                 scanner.nextLine();
             }
         }while (errorOP);
+        scanner.close();
     }
 
     static void llenarArray(){
@@ -216,5 +218,6 @@ public class Main {
                 intentos++;
             }
         }while (!correcto && intentos != 3);
+        scanner.close();
     }
 }
